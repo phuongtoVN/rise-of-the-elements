@@ -1,0 +1,121 @@
+/* Header.css */
+.header {
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .home-header {
+    background-image: url('../assets/images/event-banner.png'); /* Background image for Home */
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .light-header {
+    background-color: #ffffff; /* Light background for other pages */
+    color: #333;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .nav-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001; /* Ensure the icon is above the menu */
+  }
+  
+  .nav-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: currentColor;
+  }
+  
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Hide the menu off-screen by default */
+    height: 100vh;
+    width: 250px;
+    background-color: #1a1a1a;
+    color: white;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding-top: 60px; /* Space for the header */
+  }
+  
+  .nav-menu.open {
+    right: 0; /* Slide the menu in */
+  }
+  
+  .nav-menu ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    margin: 20px 0;
+  }
+  
+  .nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  .nav-menu a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px;
+    }
+  
+    .logo h1 {
+      font-size: 20px; /* Smaller logo text for mobile */
+    }
+  
+    .nav-icon .bar {
+      width: 20px; /* Smaller bars for mobile */
+      height: 2px;
+    }
+  
+    .nav-menu {
+      width: 200px; /* Smaller menu for mobile */
+    }
+  
+    .nav-menu ul {
+      padding: 15px;
+    }
+  
+    .nav-menu li {
+      margin: 15px 0;
+    }
+  
+    .nav-menu a {
+      font-size: 14px; /* Smaller font for mobile */
+    }
+  }

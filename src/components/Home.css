@@ -1,0 +1,142 @@
+/* Home.css */
+.home {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Header Section */
+  .header {
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: white;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    height: 80px; /* Adjust based on your logo size */
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  .nav-bar a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+  }
+  
+  /* Event Description Section */
+  .event-description {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .event-description h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .event-description p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Event Info Section */
+  .event-info {
+    padding: 40px 20px;
+    background-color: #fff;
+  }
+  
+  .event-info h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .event-info p {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Instagram Icon */
+  .instagram-link {
+    margin: 40px 0;
+  }
+  
+  .instagram-link a {
+    color: #E1306C;
+    text-decoration: none;
+  }
+  
+  .instagram-link a:hover {
+    opacity: 0.8;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .header {
+      height: auto;
+      flex-direction: column;
+      padding: 20px 10px;
+    }
+  
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo img {
+      height: 60px; /* Smaller logo for mobile */
+    }
+  
+    .nav-bar ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-bar a {
+      font-size: 14px; /* Smaller font for mobile */
+    }
+  
+    .event-description h1 {
+      font-size: 28px; /* Smaller heading for mobile */
+    }
+  
+    .event-description p {
+      font-size: 16px; /* Smaller text for mobile */
+    }
+  
+    .event-info h2 {
+      font-size: 24px; /* Smaller heading for mobile */
+    }
+  
+    .event-info p {
+      font-size: 16px; /* Smaller text for mobile */
+    }
+  }

@@ -1,0 +1,141 @@
+/* Performance.css */
+.performance {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+  }
+  
+  /* Header Section */
+  .header {
+    background-color: #1a1a1a; /* Dark background */
+    color: white;
+    padding: 20px;
+  }
+  
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .logo img {
+    height: 80px; /* Adjust based on your logo size */
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-bar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+  
+  .nav-bar a:hover {
+    color: #ffcc00; /* Highlight color on hover */
+  }
+  
+  /* Performances Section */
+  .performances {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .performances h1 {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .performance-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+  
+  .performance-item.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .performance-image {
+    flex: 1;
+  }
+  
+  .performance-image img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .performance-description {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .performance-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .performance-description p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 768px) {
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .logo img {
+      height: 60px; /* Smaller logo for mobile */
+    }
+  
+    .nav-bar ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .nav-bar a {
+      font-size: 14px; /* Smaller font for mobile */
+    }
+  
+    .performances h1 {
+      font-size: 28px; /* Smaller heading for mobile */
+    }
+  
+    .performance-item, .performance-item.reverse {
+      flex-direction: column; /* Stack image and text vertically */
+      text-align: center;
+    }
+  
+    .performance-image img {
+      max-width: 100%; /* Full-width images on mobile */
+      margin-bottom: 20px;
+    }
+  
+    .performance-description {
+      padding: 0; /* Remove padding for mobile */
+    }
+  
+    .performance-description h2 {
+      font-size: 20px; /* Smaller heading for mobile */
+    }
+  
+    .performance-description p {
+      font-size: 14px; /* Smaller text for mobile */
+    }
+  }
