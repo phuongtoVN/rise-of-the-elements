@@ -11,17 +11,15 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <div className="app">
-        <Header /> {/* Header inside Router but outside Routes */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/performance" element={<Performance />} />
-          <Route path="/activities" element={<Activities />} />
-          <Route path="/menu" element={<Menu />} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<><Header isHome={true} /><Home /></>} />
+        <Route path="/performance" element={<><Header isHome={false} /><Performance /></>} />
+        <Route path="/activities" element={<><Header isHome={false} /><Activities /></>} />
+        <Route path="/menu" element={<><Header isHome={false} /><Menu /></>} />
+      </Routes>
     </Router>
   );
 }
+
 
 export default App;

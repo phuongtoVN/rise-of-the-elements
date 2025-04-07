@@ -10,22 +10,21 @@ const Menu = () => {
     },
     {
       name: "SHAVED ICE",
-      description: ""
+      description: "Strawberry Mango Sago and Lilikoi Pog. Traditional flavors: blue vanilla, strawberry, orange dreamsicle, and watermelon."
     },
     {
       name: "HOT CHIPS",
-      description: ""
+      description: "seaweed and hot cheetos"
     },
     {
       name: "TEA AND REFRESHMENT",
-      description: ""
+      description: "boba can and water"
     }
   ];
 
   return (
     <div className="menu-page">
-      {/* Use your existing Header component */}
-      <Header isHome={false} />
+      
       
       <main className="menu-content">
         <h1 className="menu-title">Menu</h1>

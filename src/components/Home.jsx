@@ -9,9 +9,7 @@ import logo from '../assets/images/logo.png'; // Logo image
 const Home = () => {
   return (
     <div className="home">
-      {/* Header Section */}
-      <Header isHome={true} />
-
+     
       {/* Event Description Section */}
       <section className="event-description">
         <h1>RISE OF THE ELEMENTS</h1>

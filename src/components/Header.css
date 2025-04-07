@@ -1,121 +1,199 @@
-/* Header.css */
+/* ===========================
+   General Header Styles
+=========================== */
 .header {
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-  }
-  
+  position: relative;
+  width: 100%;
+}
+
+/* ===========================
+   Home Header with Background Image
+=========================== */
+.home-header {
+  background-image: url('../assets/images/event-banner.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #000;
+  color: white;
+  min-height: 1100px;
+  width: 100%;
+}
+
+/* ===========================
+   Light Header for Other Pages
+=========================== */
+.light-header {
+  background-color: #c8ad6f;
+  color: black;
+}
+
+/* ===========================
+   White Transparent Bar Behind Header Content
+=========================== */
+.header-overlay {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.85), /* top: strong white */
+    rgba(255, 255, 255, 0.5),  /* middle */
+    rgba(255, 255, 255, 0.0)   /* bottom: light fade */
+  );
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+
+/* ===========================
+   Header Content Layout
+=========================== */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  z-index: 3;
+  position: relative;
+}
+
+/* ===========================
+   Logo Layout
+=========================== */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-image {
+  width: 60px;
+  height: auto;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+}
+
+/* Override logo text color on home background */
+.home-header .logo-text h1 {
+  color: black;
+}
+
+/* ===========================
+   Hamburger Menu Icon
+=========================== */
+.nav-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 11;
+}
+
+.nav-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: currentColor;
+}
+
+/* ===========================
+   Slide-out Navigation Menu
+=========================== */
+.nav-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 250px;
+  background-color: #c8ad6f;
+  color: white;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  padding-top: 60px;
+}
+
+.nav-menu.open {
+  right: 0;
+}
+
+.nav-menu ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.nav-menu li {
+  margin: 20px 0;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  color: #ffcc00;
+}
+
+/* ===========================
+   Mobile Responsive Styling
+=========================== */
+@media (max-width: 1000px) {
   .home-header {
-    background-image: url('../assets/images/event-banner.png'); /* Background image for Home */
-    background-size: cover;
-    background-position: center;
-    color: white;
+    background-image: url('../assets/images/event-banner-mobile.png');
+    min-height: 300px;
   }
-  
-  .light-header {
-    background-color: #ffffff; /* Light background for other pages */
-    color: #333;
-  }
-  
+
   .header-content {
-    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 16px;
   }
-  
-  .logo h1 {
-    margin: 0;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
+
+  .logo-image {
+    width: 36px;
   }
-  
-  .nav-icon {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    cursor: pointer;
-    z-index: 1001; /* Ensure the icon is above the menu */
+
+  .logo-text h1 {
+    font-size: 14px;
   }
-  
+
   .nav-icon .bar {
-    width: 25px;
-    height: 3px;
-    background-color: currentColor;
+    width: 20px;
+    height: 2px;
   }
-  
+
   .nav-menu {
-    position: fixed;
-    top: 0;
-    right: -100%; /* Hide the menu off-screen by default */
-    height: 100vh;
-    width: 250px;
-    background-color: #1a1a1a;
-    color: white;
-    transition: right 0.3s ease;
-    z-index: 1000;
-    padding-top: 60px; /* Space for the header */
+    width: 200px;
   }
-  
-  .nav-menu.open {
-    right: 0; /* Slide the menu in */
-  }
-  
+
   .nav-menu ul {
-    list-style: none;
-    padding: 20px;
-    margin: 0;
+    padding: 15px;
   }
-  
+
   .nav-menu li {
-    margin: 20px 0;
+    margin: 15px 0;
   }
-  
+
   .nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 16px;
+    font-size: 14px;
   }
-  
-  .nav-menu a:hover {
-    color: #ffcc00; /* Highlight color on hover */
-  }
-  
-  /* Mobile Responsiveness */
-  @media (max-width: 768px) {
-    .header {
-      padding: 10px;
-    }
-  
-    .logo h1 {
-      font-size: 20px; /* Smaller logo text for mobile */
-    }
-  
-    .nav-icon .bar {
-      width: 20px; /* Smaller bars for mobile */
-      height: 2px;
-    }
-  
-    .nav-menu {
-      width: 200px; /* Smaller menu for mobile */
-    }
-  
-    .nav-menu ul {
-      padding: 15px;
-    }
-  
-    .nav-menu li {
-      margin: 15px 0;
-    }
-  
-    .nav-menu a {
-      font-size: 14px; /* Smaller font for mobile */
-    }
-  }
+}
