@@ -1,6 +1,5 @@
 // Performance.jsx
 import React from 'react';
-import Header from './Header';
 import './Performance.css'; // Import the CSS for styling
 //import logo from '../assets/images/logo.png'; // Logo image
 import lionDance from '../assets/images/lion-dance-1.jpg'; // Lion Dance image

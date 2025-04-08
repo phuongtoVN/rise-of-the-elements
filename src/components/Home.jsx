@@ -1,11 +1,8 @@
 // Home.jsx
 import React from 'react';
 import { Link } from 'react-router-dom'; // Add this import
-import Header from './Header';
 import './Home.css'; // Import the CSS for styling
 import { FaInstagram } from 'react-icons/fa6'; // For Instagram icon
-import eventBanner from '../assets/images/event-banner.png'; // Background image
-import logo from '../assets/images/logo.png'; // Logo image
 
 const Home = () => {
   return (

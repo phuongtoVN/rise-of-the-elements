@@ -1,8 +1,6 @@
 // Activities.jsx
 import React from 'react';
-import Header from './Header';
 import './Activities.css';
-
 import diyPlant from '../assets/images/diy-plant.jpg';
 import fortuneTeller from '../assets/images/fortune-teller.jpg';
 import photoBooth from '../assets/images/photo-booth.jpg';
@@ -37,7 +35,7 @@ const Activities = () => {
 
         <div className="activity-item">
           <div className="activity-image">
-            <img src={photoBooth} alt="Photo Booth" />
+            <img src={photoBooth} alt="" />
           </div>
           <div className="activity-description">
             <h2>Photo Booth</h2>
