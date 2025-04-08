@@ -61,7 +61,15 @@ const Activities = () => {
           </div>
           <div className="activity-description">
             <h2>Find Your Element Quiz</h2>
-            <p>Complete the Find Your Element quiz at the Elements Board to discover your element and receive a Shaved Ice ticket!</p>
+            <p>Complete the{' '}
+    <a 
+      href="https://quiz.rise-of-the-elements.com" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="quiz-link"
+    >
+      Find Your Element quiz
+    </a>{' '} at the Elements Board to discover your element and receive a Shaved Ice ticket!</p>
           </div>
         </div>
       </section>
