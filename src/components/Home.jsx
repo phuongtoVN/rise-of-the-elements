@@ -1,5 +1,6 @@
 // Home.jsx
 import React from 'react';
+import { Link } from 'react-router-dom'; // Add this import
 import Header from './Header';
 import './Home.css'; // Import the CSS for styling
 import { FaInstagram } from 'react-icons/fa6'; // For Instagram icon
@@ -25,6 +26,11 @@ const Home = () => {
         <p><strong>Time:</strong> 5:00 PM - 8:00 PM</p>
         <p><strong>Location:</strong> ARC Overlook, University of Washington, Bothell</p>
         <p><strong>Hosted by:</strong> Campus Events Board (CEB)</p>
+
+        {/* Menu Button */}
+        <Link to="/menu" className="menu-button">
+          View Our Menu
+        </Link>     
       </section>
 
       {/* Instagram Icon */}

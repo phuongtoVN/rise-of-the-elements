@@ -51,7 +51,7 @@ const Activities = () => {
           </div>
           <div className="activity-description">
             <h2>T-shirt Painting</h2>
-            <p>Unleash your creativity with T-shirt painting at the ABC 210 Metallurgy Room, inspired by the peaceful Temples.</p>
+            <p>Unleash your creativity with T-shirt painting at the Room ARC 210, inspired by the peaceful Temples.</p>
           </div>
         </div>
 

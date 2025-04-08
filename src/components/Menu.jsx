@@ -6,19 +6,23 @@ const Menu = () => {
   const menuItems = [
     {
       name: "EGGROLL",
-      description: "vegetables, tofu and mushroom - vegan"
+      description: "Vegetables, tofu and mushroom - vegan."
     },
     {
       name: "SHAVED ICE",
       description: "Strawberry Mango Sago and Lilikoi Pog. Traditional flavors: blue vanilla, strawberry, orange dreamsicle, and watermelon."
     },
     {
+      name: "MACARONS",
+      description: "Flavor: blueberry, birthday cake, vanilla, matcha, and thai tea."
+    },
+    {
       name: "HOT CHIPS",
-      description: "seaweed and hot cheetos"
+      description: "Seaweed and hot cheetos."
     },
     {
       name: "TEA AND REFRESHMENT",
-      description: "boba can and water"
+      description: "Boba can and water."
     }
   ];
 

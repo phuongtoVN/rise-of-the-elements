@@ -5,11 +5,7 @@
     color: #e8cfc1;
     background-color: #85754d;
   }
-  
-  
-  
-  
-  
+
   .nav-bar a:hover {
     color: #ffcc00; /* Highlight color on hover */
   }
@@ -51,6 +47,22 @@
     font-size: 18px;
     margin: 10px 0;
     color: #e8cfc1;
+  }
+
+  .menu-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .menu-button:hover {
+    background-color: #45a049; /* Darker green on hover */
   }
   
   /* Instagram Icon */
