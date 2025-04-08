@@ -2,7 +2,7 @@
 .home {
     font-family: Arial, sans-serif;
     text-align: center;
-    color: #333;
+    color: #e8cfc1;
     background-color: #85754d;
   }
   
@@ -23,6 +23,7 @@
   .event-description h1 {
     font-size: 36px;
     margin-bottom: 20px;
+    color: #e8cfc1
   }
   
   .event-description p {
@@ -37,16 +38,19 @@
   .event-info {
     padding: 40px 20px;
     background-color: #5a6a5e;
+    color: #e8cfc1;
   }
   
   .event-info h2 {
     font-size: 28px;
     margin-bottom: 20px;
+    color: #e8cfc1;
   }
   
   .event-info p {
     font-size: 18px;
     margin: 10px 0;
+    color: #e8cfc1;
   }
   
   /* Instagram Icon */
