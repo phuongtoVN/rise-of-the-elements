@@ -1,6 +1,6 @@
 // src/App.jsx
 import React from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 import Header from './components/Header';
 import Home from './components/Home';
 import Performance from './components/Performance';
@@ -19,7 +19,7 @@ function App() {
       navigate(path);
     }
   }, [location, navigate]);
-  
+
   return (
     <Routes>
       <Route path="/" element={<><Header isHome={true} /><Home /></>} />
