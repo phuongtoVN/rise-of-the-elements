@@ -9,6 +9,17 @@ import Menu from './components/Menu';
 import './App.css';
 
 function App() {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    // Handle hash-based redirects from 404.html
+    if (location.hash && location.pathname === '/index.html') {
+      const path = location.hash.replace('#', '');
+      navigate(path);
+    }
+  }, [location, navigate]);
+  
   return (
     <Routes>
       <Route path="/" element={<><Header isHome={true} /><Home /></>} />

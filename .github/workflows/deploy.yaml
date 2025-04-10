@@ -34,4 +34,5 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build
         cname: rise-of-the-elements.com
+        enable_jekyll: true
         force_orphan: true  # Ensures clean deployments
