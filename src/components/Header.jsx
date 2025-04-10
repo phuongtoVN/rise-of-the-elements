@@ -1,40 +1,55 @@
-// Header.jsx
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import './Header.css';
 import logo from '../assets/images/logo.png';
 
 const Header = ({ isHome }) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const navigate = useNavigate();
 
   const toggleNav = () => {
     setIsNavOpen(!isNavOpen);
   };
 
+  const handleLogoClick = () => {
+    navigate('/');
+    setIsNavOpen(false);
+  };
+
   return (
-    <header className={`header ${isHome ? 'home-header' : 'light-header'}`}>
-      {/* Translucent bar only under logo/menu */}
-      <div className="header-overlay">
-        <div className="header-content">
-          {/* Logo and Title */}
-          <div className="logo">
-            <img src={logo} alt="Element Icons" className="logo-image" />
-            <div className="logo-text">
-              <h1>RISE OF THE</h1>
-              <h1>ELEMENTS</h1>
+    <>
+      {/* Fixed Header with Overlay */}
+      <header className={`header-container ${isHome ? 'home-header' : 'light-header'}`}>
+        {/* Banner Image (homepage only) */}
+        {isHome && (
+          <div className="banner-image">
+            <div className="banner-overlay"></div>
+          </div>
+        )}
+
+        {/* Fixed Navigation Bar */}
+        <div className="fixed-nav">
+          <div className="nav-content">
+            {/* Clickable Logo */}
+            <div className="logo" onClick={handleLogoClick}>
+              <img src={logo} alt="Element Icons" className="logo-image" />
+              <div className="logo-text">
+                <h1>RISE OF THE</h1>
+                <h1>ELEMENTS</h1>
+              </div>
+            </div>
+
+            {/* Hamburger Menu */}
+            <div className={`nav-icon ${isNavOpen ? 'open' : ''}`} onClick={toggleNav}>
+              <div className="bar"></div>
+              <div className="bar"></div>
+              <div className="bar"></div>
             </div>
           </div>
-
-          {/* Hamburger Menu */}
-          <div className={`nav-icon ${isNavOpen ? 'open' : ''}`} onClick={toggleNav}>
-            <div className="bar"></div>
-            <div className="bar"></div>
-            <div className="bar"></div>
-          </div>
         </div>
-      </div>
+      </header>
 
-      {/* Slide-out Navigation */}
+      {/* Slide-out Navigation Menu */}
       <nav className={`nav-menu ${isNavOpen ? 'open' : ''}`}>
         <ul>
           <li><Link to="/" onClick={toggleNav}>HOME</Link></li>
@@ -53,7 +68,10 @@ const Header = ({ isHome }) => {
           </li>
         </ul>
       </nav>
-    </header>
+
+      {/* Content spacer for fixed nav */}
+      {!isHome && <div className="nav-spacer"></div>}
+    </>
   );
 };
 
