@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f837fa65.css",
-    "main.js": "/static/js/main.2f3bb97d.js",
+    "main.css": "/static/css/main.70a38994.css",
+    "main.js": "/static/js/main.c79db44e.js",
     "static/media/event-banner.png": "/static/media/event-banner.8e25265da7c262e88c72.png",
     "static/media/event-banner-mobile.png": "/static/media/event-banner-mobile.1105dc646f1647c7196d.png",
     "static/media/diy-plant.jpg": "/static/media/diy-plant.749b52f71255ebb58f6e.jpg",
@@ -15,11 +15,11 @@
     "static/media/tinikling-1.jpg": "/static/media/tinikling-1.9357c4b274a6f9cb8f8d.jpg",
     "static/media/avatar-dance-1.jpg": "/static/media/avatar-dance-1.572470b559f3c1d91ea0.jpg",
     "index.html": "/index.html",
-    "main.f837fa65.css.map": "/static/css/main.f837fa65.css.map",
-    "main.2f3bb97d.js.map": "/static/js/main.2f3bb97d.js.map"
+    "main.70a38994.css.map": "/static/css/main.70a38994.css.map",
+    "main.c79db44e.js.map": "/static/js/main.c79db44e.js.map"
   },
   "entrypoints": [
-    "static/css/main.f837fa65.css",
-    "static/js/main.2f3bb97d.js"
+    "static/css/main.70a38994.css",
+    "static/js/main.c79db44e.js"
   ]
 }
